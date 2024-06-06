@@ -1,0 +1,47 @@
+{
+  "name": "@challenge.day/uikit",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write **/**/*.{tsx,ts,json,js,md}",
+    "storybook": "storybook dev -p 6004",
+    "build-storybook": "storybook build",
+    "build:rollup": "rollup -c",
+    "chromatic": "npx chromatic --project-token=chpt_524dc16e08cbac1",
+    "prepublishOnly": "yarn build:rollup && yarn format"
+  },
+  "keywords": ["challenge.day", "ton", "ui", "kit", "telegram", "mini-apps", "mini apps"],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^8.1.6",
+    "@storybook/addon-interactions": "^8.1.6",
+    "@storybook/addon-links": "^8.1.6",
+    "@storybook/addon-styling": "^1.3.7",
+    "@storybook/blocks": "^8.1.6",
+    "@storybook/react": "^8.1.6",
+    "@storybook/react-webpack5": "^8.1.6",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/react": "^18.3.3",
+    "chromatic": "^11.5.3",
+    "daisyui": "^4.12.2",
+    "prop-types": "^15.8.1",
+    "rollup": "^4.18.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-svg": "^2.0.0",
+    "storybook": "^8.1.6",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
