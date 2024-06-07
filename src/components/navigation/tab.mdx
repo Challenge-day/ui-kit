@@ -1,0 +1,27 @@
+import { Canvas, Meta, ArgTypes } from "@storybook/blocks";
+import * as TabStories from "./index.stories";
+
+<Meta of={TabStories} />
+
+# Tabs
+
+Tabs can be used for rendering specific content on the screen.
+
+## Tabs
+
+<Canvas of={TabStories.Tabs} />
+
+```tsx
+import { Tabs, Tab } from "@challenge.app/uikit";
+
+const [activeTabIndex, setActiveTabIndex] = useState(0);
+
+<Tabs onSingleTabPress={(index) => setActiveTabIndex(index ?? 0)} activeTabIndex={activeTabIndex}>
+  <Tab>This is tab text</Tab>
+  <Tab>This is tab text</Tab>
+</Tabs>;
+```
+
+### Props
+
+<ArgTypes />

@@ -1,0 +1,32 @@
+import { Canvas, Meta, ArgTypes } from "@storybook/blocks";
+import * as ButtonStories from "./buttons.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Buttons can be used to perform actions on a page. There are two types of exported buttons - `PrimaryButton`, & `SecondaryButton`
+
+## PrimaryButton
+
+<Canvas of={ButtonStories.PrimaryButton} />
+
+## SecondaryButton
+
+<Canvas of={ButtonStories.SecondaryButton} />
+
+```tsx
+import { PrimaryButton, SecondaryButton } from "@challenge.app/uikit"
+
+<PrimaryButton onClick={() => console.log("primary button clicked")}>
+  <span>Primary Button</span>
+</PrimaryButton>
+
+<SecondaryButton onClick={() => console.log("secondary button clicked")}>
+  <span>Secondary Button</span>
+</SecondaryButton>
+```
+
+### props
+
+<ArgTypes />

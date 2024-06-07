@@ -1,0 +1,32 @@
+import { Canvas, Meta, ArgTypes } from "@storybook/blocks";
+import * as CardStories from "./index.stories";
+
+<Meta of={CardStories} />
+
+# Card
+
+Cards can be used to host other components, or display data.
+
+## BlockCard
+
+<Canvas of={CardStories.BlockCard} />
+
+## BlueCard
+
+<Canvas of={CardStories.BlueCard} />
+
+```tsx
+import { BlockCard, BlueCard } from "@challenge.app/uikit"
+
+<BlockCard>
+  <span>This is block card.</span>
+</BlockCard>
+
+<BlueCard>
+  <span>This is blue card.</span>
+</BlueCard>
+```
+
+### Props
+
+<ArgTypes />

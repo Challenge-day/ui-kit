@@ -1,0 +1,24 @@
+import { Canvas, Meta, ArgTypes } from "@storybook/blocks";
+import * as TaskButtonStories from "./task-buttons.stories";
+
+<Meta of={TaskButtonStories} />
+
+# TaskButton
+
+TaskButtons are buttons that serve as state indicators for tasks
+
+## TaskButton
+
+<Canvas of={TaskButtonStories.TaskButton} />
+
+```tsx
+import { TaskButton } from "@challenge.app/uikit";
+
+<TaskButton onClick={() => console.log("primary button clicked")}>
+  <span>Task Button</span>
+</TaskButton>;
+```
+
+### props
+
+<ArgTypes />

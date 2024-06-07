@@ -10,7 +10,7 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({ disabled, children, .
     <button
       {...props}
       disabled={disabled}
-      className={clsx("w-full rounded-[100px] flex justify-center items-center p-[10px_20px] shrink-0 border", {
+      className={clsx("rounded-[100px] flex justify-center items-center p-[10px_20px] shrink-0 border", {
         "border-[#edeeef] focus:border-[#fafbfc]": !disabled,
         "border-[#d9d9d9]": disabled,
       })}

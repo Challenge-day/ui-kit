@@ -22,7 +22,16 @@ export const Tab: React.FC<TabProps> = ({ onPress, isActive, children, tabIndex 
 );
 
 interface TabsProps {
+  /**
+   *
+   * Executes an action on a single tab click
+   * @param index - Index of clicked tab item.
+   */
   onSingleTabPress?: (index?: number) => void;
+
+  /**
+   * Active tab index. The tab at that index would be highlighted.
+   */
   activeTabIndex?: number;
   children: ReactElement<TabProps> | ReactElement<TabProps>[];
 }

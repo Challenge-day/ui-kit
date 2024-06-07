@@ -11,13 +11,25 @@ const meta: Meta<typeof UIKitBlockCard> = {
 export default meta;
 
 export const BlockCard: React.FC = () => (
-  <div style={{ width: "335px" }}>
-    <UIKitBlockCard>
-      <div style={{ height: "200px" }} />
-      <UIKitBlueCard>
-        <div style={{ height: "300px" }} />
-      </UIKitBlueCard>
-    </UIKitBlockCard>
+  <div
+    style={{
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "#e9e9e9",
+      padding: "10px",
+      minHeight: "100vh",
+    }}
+  >
+    <div style={{ width: "335px" }}>
+      <UIKitBlockCard>
+        <div style={{ height: "200px" }} />
+        <UIKitBlueCard>
+          <div style={{ height: "300px" }} />
+        </UIKitBlueCard>
+      </UIKitBlockCard>
+    </div>
   </div>
 );
 

@@ -16,5 +16,9 @@ const config: StorybookConfig = {
     name: "@storybook/react-webpack5",
     options: {},
   },
+  typescript: {
+    reactDocgen: "react-docgen",
+    check: false,
+  },
 };
 export default config;

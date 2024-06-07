@@ -10,7 +10,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ disabled, children, ...pr
     <button
       {...props}
       disabled={disabled}
-      className={clsx("w-full rounded-[100px] flex justify-center items-center p-[10px_20px] shrink-0", {
+      className={clsx("rounded-[100px] flex justify-center items-center p-[10px_20px] shrink-0", {
         "bg-[#001a31] focus:bg-[#012443]": !disabled,
         "bg-[#bcbfc6]": disabled,
       })}
