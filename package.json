@@ -6,9 +6,10 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write **/**/*.{tsx,ts,json,js,md,mdx}",
+    "format": "prettier --ignore-path \"./.prettierignore\" --write **/**/*.{tsx,ts,json,js,md,mdx}",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook-docs": "storybook dev -p 6006 --docs",
+    "build-storybook": "storybook build && storybook build --docs",
     "build:rollup": "rollup -c",
     "chromatic": "npx chromatic --project-token=chpt_0cf0debe2da015b",
     "prepublishOnly": "yarn build:rollup && yarn format"
@@ -64,5 +65,9 @@
   "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
