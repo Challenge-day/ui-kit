@@ -1,0 +1,31 @@
+import { Canvas, Meta, ArgTypes } from "@storybook/blocks";
+import * as AvatarStories from "./index.stories";
+
+<Meta of={AvatarStories} />
+
+# Avatar
+
+A component for rendering images.
+
+<Canvas of={AvatarStories.Avatar} />
+
+```tsx
+import { Avatar } from "@challenge.app/uikit";
+
+<Avatar src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+<Avatar src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" isFullyRounded />
+<Avatar
+  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+  isFullyRounded
+  size="min"
+/>
+<Avatar
+  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+  isFullyRounded
+  size="max"
+/>
+```
+
+### Props
+
+<ArgTypes />
