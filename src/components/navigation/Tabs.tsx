@@ -49,7 +49,7 @@ export const Tabs: React.FC<TabsProps> = ({ onSingleTabPress, activeTabIndex = 0
   }, [validateChildren]);
 
   return (
-    <div className="flex justify-center items-center p-[5px_15px] rounded-[100px] gap-3">
+    <div className="flex justify-center items-center p-[5px_15px] rounded-[100px] gap-3 overflow-auto">
       {tabs.map((tab, index) =>
         cloneElement(tab, {
           key: index,
